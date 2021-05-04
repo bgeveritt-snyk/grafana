@@ -58,6 +58,7 @@ class UnthemedCodeEditor extends React.PureComponent<Props> {
         this.completionCancel = registerSuggestions(this.monaco, language, getSuggestions);
       }
 
+      console.log('Calling loadCustomLanguage in componentDidUpdate');
       this.loadCustomLanguage();
     }
   }
@@ -85,7 +86,6 @@ class UnthemedCodeEditor extends React.PureComponent<Props> {
   handleBeforeMount = (monaco: Monaco) => {
     this.monaco = monaco;
     const { language, getSuggestions } = this.props;
-    this.loadCustomLanguage();
 
     if (getSuggestions) {
       this.completionCancel = registerSuggestions(monaco, language, getSuggestions);
@@ -102,8 +102,6 @@ class UnthemedCodeEditor extends React.PureComponent<Props> {
       });
     }
 
-    // TODO: maybe instead there should be a callback for after language has loaded?
-    // dunno how that'll go with builtin languages??
     const languagePromise = this.loadCustomLanguage();
 
     if (onEditorDidMount) {
