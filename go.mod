@@ -32,7 +32,7 @@ require (
 	github.com/facebookgo/subset v0.0.0-20150612182917-8dac2c3c4870 // indirect
 	github.com/fatih/color v1.10.0
 	github.com/gchaincl/sqlhooks v1.3.0
-	github.com/getsentry/sentry-go v0.10.0
+	github.com/getsentry/sentry-go v0.13.0
 	github.com/go-kit/kit v0.10.0
 	github.com/go-macaron/binding v0.0.0-20190806013118-0b4f37bab25b
 	github.com/go-macaron/gzip v0.0.0-20160222043647-cad1c6580a07
@@ -63,7 +63,7 @@ require (
 	github.com/lib/pq v1.10.0
 	github.com/linkedin/goavro/v2 v2.10.0
 	github.com/magefile/mage v1.11.0
-	github.com/mattn/go-isatty v0.0.12
+	github.com/mattn/go-isatty v0.0.14
 	github.com/mattn/go-sqlite3 v1.14.7
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/patrickmn/go-cache v2.1.0+incompatible
@@ -87,10 +87,11 @@ require (
 	github.com/weaveworks/common v0.0.0-20210419092856-009d1eebd624
 	github.com/xorcare/pointer v1.1.0
 	github.com/yudai/gojsondiff v1.0.0
+	github.com/yudai/pp v2.0.1+incompatible // indirect
 	go.opentelemetry.io/collector v0.25.0
-	golang.org/x/crypto v0.0.0-20210220033148-5ea612d1eb83
+	golang.org/x/crypto v0.0.0-20210921155107-089bfa567519
 	golang.org/x/exp v0.0.0-20210220032938-85be41e4509f // indirect
-	golang.org/x/net v0.0.0-20210421230115-4e50805a0758
+	golang.org/x/net v0.0.0-20211008194852-3b03d305991f
 	golang.org/x/oauth2 v0.0.0-20210413134643-5e61552d6c78
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 	golang.org/x/time v0.0.0-20210220033141-f8bda1e9f3ba
